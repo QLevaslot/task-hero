@@ -21,7 +21,7 @@ function compile(watch) {
     plugin = [[watchify, {ignoreWatch: ['**/node_modules/**']}]]
   }
   var bundler = browserify({
-    entries: "./app/index.jsx",
+    entries: "./src/index.jsx",
     debug: true,
     cache: {},
     packageCache: {},
@@ -55,7 +55,7 @@ function compile(watch) {
 
 // Compile sass files into CSS
 function sass() {
-  return gulp.src("app/assets/sass/main.scss")
+  return gulp.src("src/assets/sass/main.scss")
     .pipe(gulpSourcemaps.init())
     .pipe(gulpSass({
       outputStyle: "compressed",
@@ -76,7 +76,7 @@ gulp.task('build', function () {
 });
 gulp.task('watch', function () {
   sass();
-  gulp.watch('./app/assets/sass/**/*.scss', sass);
+  gulp.watch('src/assets/sass/**/*.scss', sass);
   compile(true);
 });
 
