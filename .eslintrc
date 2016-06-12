@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "jsx-closing-bracket-location": 0,
+    "spaced-comment": 0, // hate it being enforced
+    "max-len": ["error", 120] // I don't code on my smartphone, need more than the default 80
+  },
+  "settings": {
+    "import/resolve": {
+      "extensions": [ ".js", ".jsx" ]
+    },
+    "import/parser": "babel-eslint"
+  }
+}

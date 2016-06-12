@@ -1,5 +1,7 @@
 # Ignore generated project files
 node_modules
+build
+*.log
 
 # IntelliJ files
 .idea
