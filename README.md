@@ -14,7 +14,7 @@ build a progressive web application.
 
 - ES6 ✓
 - React ✓
-- Flux
+- Redux ✓
 - Gulp (v4.0 alpha) ✓
 - Sass
 - Electron
