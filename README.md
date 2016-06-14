@@ -12,14 +12,29 @@ build a progressive web application.
 
 ### Front
 
-- ES6 ✓
-- React ✓
-- Redux ✓
-- Gulp (v4.0 alpha) ✓
-- Sass
-- Electron
+- [x] ES6 
+- [x] React 
+- [x] Redux 
+- [x] Gulp (v4.0 alpha) 
+- [ ] Sass
+- [ ] Electron
 
 ### Back
 
 Intending to add Node.js server a little further down the line, before toying with
 service workers
+
+## Dev
+
+### Install Dependencies
+
+```sh
+npm install
+```
+
+### Launch the App with Watcher (js, sass)
+
+```sh
+npm start
+```
+

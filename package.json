@@ -1,10 +1,17 @@
 {
-  "name": "streak",
-  "version": "0.0.0",
-  "description": "Streak App",
-  "main": "index.js",
+  "name": "Task Hero",
+  "version": "0.0.1",
+  "description": "Simple todo application BUT for Heroes !",
+  "main": "index.jsx",
   "author": "Quentin LEVASLOT",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QLevaslot/task-hero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/QLevaslot/task-hero/issues"
+  },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
     "babel-preset-es2015": "^6.9.0",
