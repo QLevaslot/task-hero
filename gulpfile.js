@@ -70,10 +70,10 @@ function sass() {
     .pipe(gulp.dest("build/"));
 }
 
-gulp.task('build', function () {
-  sass();
-  compile();
-});
+gulp.task('sass', function(){return sass();});
+gulp.task('compile', function(){return compile();});
+gulp.task('build', gulp.series('sass', 'compile'));
+
 gulp.task('watch', function () {
   sass();
   gulp.watch('src/assets/sass/**/*.scss', sass);

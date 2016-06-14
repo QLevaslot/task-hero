@@ -10,7 +10,8 @@
     "jsx-closing-bracket-location": 0, // doesn't always improve readability
     "comma-dangle": 0, // too much
     "spaced-comment": 0, // sucks for code comments
-    "max-len": ["error", 120] // I don't code on my smartphone, need more than the default 80
+    "max-len": ["error", 120], // I don't code on my smartphone, need more than the default 80
+    "no-console": 0 // todo: param this to have a dev and a 'prod' configuration
   },
   "settings": {
     "import/resolve": {
