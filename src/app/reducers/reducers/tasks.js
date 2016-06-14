@@ -1,5 +1,4 @@
 const task = (state, action) => {
-  let newState = {};
   switch (action.type) {
     case 'ADD_TASK':
       return {
@@ -11,9 +10,7 @@ const task = (state, action) => {
       if (state.id !== action.id) {
         return state;
       }
-      newState = state;
-      newState.completed = !state.completed;
-      return newState;
+      return { ...state, completed: !state.completed };
     default:
       return state;
   }
