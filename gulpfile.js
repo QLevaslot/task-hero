@@ -26,7 +26,7 @@ function compile(watch) {
     cache: {},
     packageCache: {},
     plugin: plugin,
-    transform: [["eslintify"], ["babelify", {"presets": ["es2015", "react"]}]]
+    transform: [["eslintify"], ["babelify", {"presets": ["es2015", "react", "stage-2"]}]]
   });
 
   function rebundle() {
