@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import * as reducers from './reducers';
+import visibilityFilter from './visibilityFilter';
+import tasks from './tasks';
 
-const taskApp = combineReducers(reducers);
+const taskApp = combineReducers({
+  visibilityFilter,
+  tasks
+});
 
 export default taskApp;
