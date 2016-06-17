@@ -16,13 +16,13 @@ build a progressive web application.
 - [x] React 
 - [x] Redux 
 - [x] Gulp (v4.0 alpha) 
-- [ ] Sass
+- [x] Sass
 - [ ] Electron
 
 ### Back
 
-Intending to add Node.js server a little further down the line, before toying with
-service workers
+Intending to add Node.js server with RxJS a little further down the line, before toying with
+service workers.
 
 ## Dev
 
