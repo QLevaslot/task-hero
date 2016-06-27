@@ -3,14 +3,18 @@ const task = (state, action) => {
     case 'ADD_TASK':
       return {
         id: action.id,
-        text: action.text,
-        completed: false
+        description: action.description,
+        status: 'todo',
+        dueDate: action.dueDate,
+        tags: action.tags,
+        favorite: action.favorite,
+        _synchronised: action.synchronised
       };
     case 'TOGGLE_TASK':
       if (state.id !== action.id) {
         return state;
       }
-      return { ...state, completed: !state.completed };
+      return { ...state, status: (state.status === 'done' ? 'todo' : 'done') };
     default:
       return state;
   }

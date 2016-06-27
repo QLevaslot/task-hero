@@ -20,7 +20,7 @@ class Filter extends React.Component {
       </FilterLink>
       {", "}
       <FilterLink filter="SHOW_COMPLETED">
-        Completed
+        Done
       </FilterLink>
     </p>);
   }

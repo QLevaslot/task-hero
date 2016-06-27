@@ -7,9 +7,9 @@ const getVisibleTasks = (todos, filter) => {
     case 'SHOW_ALL':
       return todos;
     case 'SHOW_COMPLETED':
-      return todos.filter(t => t.completed);
+      return todos.filter(t => t.status === 'done');
     case 'SHOW_ACTIVE':
-      return todos.filter(t => !t.completed);
+      return todos.filter(t => t.status === 'done');
     default:
       return [];
   }

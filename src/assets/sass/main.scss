@@ -1,108 +1,11 @@
 @import 'variables';
 @import "material-design-lite/src/material-design-lite";
+@import 'card';
+@import 'topbar';
+@import 'body';
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
   background-color: #fafafa;
 }
-
-.title {
-  color: white;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.subtitle {
-  color: white;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 40px;
-  margin-bottom: 30px;
-}
-
-.input {
-  height: 50px;
-  font-size: 16px;
-  width: 50%;
-  margin: 20px auto;
-}
-
-.topbar {
-  padding: 5px;
-  height: 50px;
-}
-
-.welcome {
-  padding: 5px;
-  background-color: unquote("rgb(#{$color-primary})");
-  text-align: center;
-  color: white;
-
-}
-
-.welcome-add-task {
-  color: white !important;
-  .mdl-textfield__label:after {
-    background-color: white;
-  }
-  button {
-
-  }
-  .welcome-add-task-input {
-    margin: 0px 10px;
-  }
-}
-
-.content-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  background-color: white;
-  width: 300px;
-  height: 120px;
-  margin: 20px;
-  border-radius: 2px;
-  .card-title {
-    color: white;
-    padding: 5px;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-  }
-
-  .card-title[data-status="todo"] {
-    background-color: $color-card-todo;
-  }
-  .card-title[data-status="done"] {
-    background-color: $color-card-done;
-  }
-  .card-title[data-status="missed"] {
-    background-color: $color-card-missed;
-  }
-  .card-title[data-status="dismissed"] {
-    background-color: $color-card-dismissed;
-  }
-
-  .card-button {
-    margin: 20px calc(33% - 28px);
-  }
-  .card-done-button {
-    background-color: $color-card-done;
-    margin-right: calc(17% - 28px);
-  }
-
-  .card-dismiss-button {
-    background-color: $color-card-dismissed;
-    margin-left: calc(17% - 28px);
-  }
-
-  .card-due-date {
-    padding: 5px;
-    float: right;
-  }
-}
-

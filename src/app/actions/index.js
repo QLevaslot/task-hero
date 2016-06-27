@@ -1,9 +1,9 @@
 let nextTaskId = 0;
 
-export const addTask = (text) => ({
+export const addTask = (description) => ({
   type: 'ADD_TASK',
   id: nextTaskId++,
-  text
+  description
 });
 
 export const setVisibilityFilter = (filter) => ({
